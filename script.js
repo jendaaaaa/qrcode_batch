@@ -6,9 +6,6 @@ document.getElementById('generateBtn').addEventListener('click', async () => {
     const links = rawLinks.split('\n')
         .map(link => link.trim())
         .filter(link => link.length > 0);
-
-    console.log(links);
-    console.log(marginPx);
     
     if (links.length === 0) {
         alert("no items!");
