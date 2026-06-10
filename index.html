@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="QR code batch gen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>QR Code Batch Generator</h1>
+        </div>
+        <div>
+            <label for="prefixInput">filename prefix:</label>
+            <input type="text" id="prefixInput" placeholder="e.g. products-">
+        </div>
+        <div>
+            <label for="linksInput">paste links (one per line):</label>
+            <textarea id="linksInput" rows="10" cols="50" placeholder="https://example.com/item1/&#10;https://example.com/item2/"></textarea>
+        </div>
+
+        <div>
+            <label for="marginPx">Margin [px]:</label>
+            <input type="number" id="marginPx">
+        </div>
+
+        <div>
+            <button id="generateBtn">generate & download .zip</button>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
